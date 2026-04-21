@@ -1,6 +1,6 @@
 # QuestDo
 
-## 🧠 Idea
+## 🧠 Idee
 
 QuestDo ist eine gamifizierte Challenge-Plattform, bei der Nutzer reale Aufgaben („Quests“) erledigen, Punkte sammeln und ihren Fortschritt mit Freunden verfolgen.
 
