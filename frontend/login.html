@@ -98,49 +98,46 @@
         color: #eceff1;
       }
       .login-form {
-  width: 100%;
-  max-width: 320px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
+        width: 100%;
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+      }
 
-label {
-  font-size: 18px;
-  margin-bottom: 6px;
-  opacity: 0.9;
-  color: #eceff1;
-}
+      label {
+        font-size: 18px;
+        margin-bottom: 6px;
+        opacity: 0.9;
+        color: #eceff1;
+      }
 
-input {
-  padding: 12px 14px;
-  border-radius: 8px;
-  border: 1px solid #c0c6cc; /* deutlich sichtbarer */
-  font-size: 16px;
-  outline: none;
-  transition: all 0.2s ease;
-  background-color: #ffffff;
-  color: #191970;
-}
+      input {
+        padding: 12px 14px;
+        border-radius: 8px;
+        border: 1px solid #c0c6cc; /* deutlich sichtbarer */
+        font-size: 16px;
+        outline: none;
+        transition: all 0.2s ease;
+        background-color: #ffffff;
+        color: #191970;
+      }
 
-input::placeholder {
-  color: #191970;
-}
+      input::placeholder {
+        color: #191970;
+      }
 
+      input:focus {
+        border-color: #1c1cd7;
+        box-shadow: 0 0 0 3px rgba(28, 28, 215, 0.25);
+      }
 
-input:focus {
-  border-color: #1c1cd7;
-  box-shadow: 0 0 0 3px rgba(28, 28, 215, 0.25);
-}
-
-      
-    
       @media (prefers-color-scheme: dark) {
         body {
           background-color: #191970;
@@ -171,16 +168,17 @@ input:focus {
         main p {
           color: #191970;
         }
-         input {
-    background-color: #191970;
-    color: #eceff1;
-  }
-  input::placeholder {
-  color: #eceff1;
-}
-label {
-  color: #191970;
-      }}
+        input {
+          background-color: #191970;
+          color: #eceff1;
+        }
+        input::placeholder {
+          color: #eceff1;
+        }
+        label {
+          color: #191970;
+        }
+      }
     </style>
 
     <script>
@@ -200,20 +198,31 @@ label {
     <main>
       <p>Login</p>
 
-        <form class="login-form">
-  <div class="form-group">
-    <label for="username">Benutzername</label>
-<input type="text" id="username" name="username" autocomplete="username" required>
-  </div>
+      <form class="login-form">
+        <div class="form-group">
+          <label for="username">Benutzername</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            autocomplete="username"
+            required
+          />
+        </div>
 
-  <div class="form-group">
-    <label for="password">Passwort</label>
-<input type="password" id="password" name="password" autocomplete="current-password" required>
-  </div>
+        <div class="form-group">
+          <label for="password">Passwort</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            autocomplete="current-password"
+            required
+          />
+        </div>
 
-  <button type="submit" class="btn">Login</button>
-</form>
-
+        <button type="submit" class="btn">Login</button>
+      </form>
     </main>
 
     <footer>
